@@ -1,0 +1,6 @@
+# Activate Pi Camera
+sudo modprobe bcm2835-v4l2
+
+# Start Motion Camera Server
+sudo service motion restart
+sudo motion
