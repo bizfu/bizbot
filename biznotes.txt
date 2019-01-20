@@ -23,6 +23,13 @@ sudo i2cdetect -y 1
 # System Control
 sudo restart now
 sudo shutdown now
+jobs
+ps
+kill PID#
 
 # Source Control
 git status
+git commit -a -m "comment"
+git pull
+git push
+git add FILENAME
