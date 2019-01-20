@@ -4,3 +4,25 @@ sudo modprobe bcm2835-v4l2
 # Start Motion Camera Server
 sudo service motion restart
 sudo motion
+
+# Alexa Service
+sudo nano /etc/opt/AlexaPi/config.yaml
+sudo systemctl start AlexaPi.service
+sudo systemctl status AlexaPi.service
+
+# Configure Audio
+alsamixer
+aplay test.wav
+
+# IP Info
+sudo ifconfig
+
+# I2C Info
+sudo i2cdetect -y 1
+
+# System Control
+sudo restart now
+sudo shutdown now
+
+# Source Control
+git status
